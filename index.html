@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Prateek Chauhan - Web Developer, Programmer</title>
-   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="./Styles/index.css">
 
 </head>
 <style>
@@ -25,28 +25,29 @@
             </p>
             <p class="mail">Drop a mail @prateekchauhan0004@gmail.com</p>
          </div>
-         
+
          <div class="sec">
             <div class="second">
                <img src="pimage1edit.jpeg" alt="">
             </div>
-            <button class="resbtn">DOWNLOAD RESUME</button>
+            <a href="prateek chauhan resume.pdf" class="download" download="prateek_chauhan_resume"><button class="resbtn" >DOWNLOAD RESUME</button></a>
          </div>
 
       </div>
       <section id="first">
-        <div class="intro reveal">
-         <span><h1 class="head reveal">ABOUT ME</h1></span>
-         <h2 class="introh2 reveal">Hi, I am Prateek Chauhan</h2>
-         <p class="intropara reveal">Aspiring and enthusiastic Java Backend Developer with more than 1500+
-            hours of coding and 1200+ hours of DSA hands on practice. Like to solve Data Structure and Algorithims problems.
-            Looking to work with an organisation where I can enhance my skills as a developer.
+         <div class="intro reveal">
+            <span>
+               <h1 class="head reveal">ABOUT ME</h1>
+            </span>
+            <h2 class="introh2 reveal">Hi, I am Prateek Chauhan</h2>
+            <p class="intropara reveal">Aspiring and enthusiastic Java Backend Developer with more than 1500+
+               hours of coding and 1200+ hours of DSA hands on practice. Like to solve Data Structure and Algorithims
+               problems.
+               Looking to work with an organisation where I can enhance my skills as a developer.
             </p>
-        </div>
+         </div>
       </section>
       <section id="second">
-
-
          <div class="techstack reveal">
             <h1 class="head">Technologies I Use</h1>
             <div class="images">
@@ -89,11 +90,11 @@
                <p class="descp">ASOS plc is a British online fashion and cosmetic retailer. Asos.com is its online
                   e-commerce platform.</p>
                <span>
-                  <button class="btn">WEBSITE LINK</button>
-                  <button class="btn">GIT GUB LINK</button>
+                  <button class="btn" id="prj1web">WEBSITE LINK</button>
+                  <button class="btn" id="prj1git">GIT HUB LINK</button>
                </span>
                <h2>Tech Stack</h2>
-               <span>
+               <span class="links">
                   <a href="" class="link">HTML</a>
                   <hr>
                   <a href="" class="link">CSS</a>
@@ -102,20 +103,20 @@
                </span>
                <h2>2022</h2>
             </div>
-            <div>
+            <div class="primg">
                <img src="Screenshot (78).png" alt="" class="pr1img">
             </div>
          </div>
          <div class="secondProject reveal">
-            <div>
+            <div class="primg">
                <img src="Screenshot (79).png" alt="" class="pr2img">
             </div>
             <div>
                <h1 class="deschead">MailChimp clone</h1>
                <p class="descp">Mailchimp is a marketing automation platform and email marketing service.</p>
                <span>
-                  <button class="btn">WEBSITE LINK</button>
-                  <button class="btn">GIT GUB LINK</button>
+                  <button class="btn" id="prj2web">WEBSITE LINK</button>
+                  <button class="btn" id="prj2git">GIT HUB LINK</button>
                </span>
                <h2>Tech Stack</h2>
                <span>
@@ -143,10 +144,11 @@
                   </span>
                   <span>
                      <img
-                        src="https://cdn-user-icons.flaticon.com/75639/75639268/1663333413222.svg?token=exp=1663334320~hmac=afd41b3d1cbeedabf499fbb8bba74ca4"
-                        alt="">
+                        src="https://cdn-user-icons.flaticon.com/75639/75639268/1663333413222.svg?token=exp=1663433358~hmac=0ff1d4fecefd40b0acd54668c697f66d"
+                        alt="error">
+                     </span>
                </div>
-               </span>
+               
                <form action="" class="cform">
 
                   <input type="text" placeholder="Your name" id="name"><br>
@@ -156,16 +158,20 @@
                   <input type="text" placeholder="Your Number" id="num"><br>
                   <textarea name="message" id="msg" cols="10" rows="10" placeholder="Message"></textarea>
                </form>
-               <button class="btn" id="sub">
-                  SUBMIT
-               </button>
+               <span>
+                  <button class="btn" id="sub">
+                     SUBMIT
+                  </button>
+               </span>
+               
             </div>
-            <div>
+            <div id="dsaC">
                <div class="so">1500+ hours of Coding</div>
                <div class="so">1200+ hours of DSA</div>
             </div>
             <div class="sm ">
                <h1>Connect with me on social media</h1>
+               
                <img src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt=""><a href=""
                   class="link">@PRATEEKCHAUHAN</a><br>
                <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt=""><a href=""
@@ -173,7 +179,7 @@
                <img src="https://cdn-icons-png.flaticon.com/128/888/888853.png" alt=""><a href=""
                   class="link">PRATEEKCHAUHAN0004@GMAIL.COM</a><br>
                <img src="https://cdn-icons-png.flaticon.com/128/552/552489.png" alt=""><a href=""
-                  class="link">+91-9315807215</a>
+                  class="link">+91-9315807215</a><br>
             </div>
          </div>
       </section>
@@ -198,6 +204,20 @@
          }
       }
    }
+
+   document.querySelector("#prj1web").addEventListener("click", fun = () => {
+      window.location.href = "https://stirring-marzipan-5d4585.netlify.app/"
+   })
+   document.querySelector("#prj1git").addEventListener("click", fun = () => {
+      window.location.href = "https://github.com/Sagar1079/asos_project"
+   })
+   document.querySelector("#prj2web").addEventListener("click", fun = () => {
+      window.location.href = "https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/"
+   
+   })
+   document.querySelector("#prj2git").addEventListener("click", fun = () => {
+      window.location.href = "https://github.com/PRA3EEK/ethereal-mask-9914"
+   })
 </script>
 
 </html>

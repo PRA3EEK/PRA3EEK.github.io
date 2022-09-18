@@ -220,45 +220,6 @@
   width: 20px;
 }
 
-@media all and (max-width :1000px) and (min-width:400px) {
-  .about>.first>h1 {
-    font-size: 40px;
-    /* margin-bottom: -100px; */
-    position: relative;
-
-    animation: animatedText 1s infinite alternate-reverse, mtext 2s 1;
-  }
-
-  .about>.first>p {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-
-  .about {
-    display: flex;
-
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .first {
-    height: 82px;
-    padding: 20px;
-  }
-
-  .images>div {
-    /* border: 1px solid white; */
-    width: 50px;
-    height: 50px;
-    transition: 0.5s;
-
-  }
-
-  .techstack>h1 {
-    font-size: 30px;
-  }
-}
 
 @keyframes text {
   0% {
@@ -356,7 +317,27 @@
     display: block;
   }
 }
+@keyframes ntext {
+  0% {
+    color: #1a1a1d;
+    margin-bottom: -90px;
 
+  }
+
+  30% {
+
+    letter-spacing: 9px;
+    margin-bottom: -90px;
+    font-size: 15px;
+  }
+
+  85% {
+
+    letter-spacing: 5px;
+    margin-bottom: -90px;
+    font-size: 15px;
+  }
+}
 /* projects section css */
 /*  */
 /*  */
@@ -562,7 +543,7 @@ hr {
   width: 100%;
 }
 .so{
-  border: 2px solid #c3073f;
+  border: 2px solid white;
   height: 12rem;
   width:  12rem;
   border-radius: 50%;
@@ -666,4 +647,330 @@ margin-top: 70px;
   /* border: 1px solid; */
   color: white;
   font-size: 15px;
+}
+
+@keyframes mail{
+0%{
+  opacity: 0;
+}
+30%{
+  opacity: 0;
+}
+60%{
+  opacity: 0;
+}
+90%{
+  opacity: 0;
+}
+
+}
+@media all and (max-width :1300px) and (min-width:700px) {
+  .about>.first>h1 {
+    font-size: 40px;
+    /* margin-bottom: -100px; */
+    position: relative;
+
+    animation: animatedText 1.5s infinite alternate-reverse, mtext 2s 1;
+  }
+
+  .about>.first>p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+   
+  }
+  .about>.first>p:nth-child(3){
+    animation: mail 2s ;
+   
+  }
+  .about {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .first {
+    height: 82px;
+    padding: 20px;
+  }
+
+  .images>div {
+    /* border: 1px solid white; */
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+
+  }
+  #dsaC{
+    display: none;
+  }
+  .techstack>h1 {
+    font-size: 30px;
+  }
+  .sec{
+    margin-top: 100px;
+  }
+  .resbtn{
+    width: 200px;
+    font-size: 1rem;
+  }
+  .head{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .introh2{
+    font-size: 20px;
+    /* border: 1px solid white; */
+    width: 50%;
+  }
+  .intropara{
+    /* border: 1px solid white; */
+    font-size: 1rem;
+    line-height: 25px;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+  .firstProject, .secondProject{
+    display: block;
+  }
+  .deschead{
+    font-size: 22px;
+  }
+  .descp{
+    font-size: 15px;
+    /* border: 1px solid white; */
+    width: 60%;
+    
+    margin: 20px auto 20px auto;
+  }.btn{
+    font-size: 12px;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+  }
+  .link{
+    font-size: 1rem;
+  }
+  .links
+  {
+    margin: 20px 0 20px 0;
+  }
+  .primg{
+    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto 20px auto;
+  }
+  #contact{
+    display: block;
+  }
+  #contact>div:nth-child(1){
+    width: 70%;
+    margin: auto;
+  }
+  #contact>div:nth-child(3){
+    width: 70%;
+    margin: auto;
+   
+  }
+  
+  .chead{
+    font-size: 21px;
+  }
+  .chead+h2{
+    font-size: 15px;
+  }.ctext>span>img{
+    height: 50px;
+  }
+ #dsaC{
+  display: grid;
+  /* border: 1px solid white; */
+  grid-template-columns:repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  /* border: 1px solid white; */
+  margin: 40px auto 40px auto;
+ }
+ .so{
+  font-size: 25px;
+  width: 150px;
+  height: 150px;
+  /* margin-left: 90px; */
+ 
+ }
+ .sm>h1{
+  font-size: 21px;
+ }
+ .sm>img{
+   height: 20px;
+   width: 20px;
+ }
+ .sm>a{
+  font-size: 12px;
+ }
+ 
+}
+
+@media all and (max-width :700px) and (min-width:200px) {
+  .about>.first>h1 {
+    font-size: 20px;
+    /* margin-bottom: -100px; */
+    position: relative;
+
+    animation: animatedText 1.5s infinite alternate-reverse, ntext 2s 1;
+  }
+  .about {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about>.first>p:nth-child(2) {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+   
+  }
+  .about>.first>p:nth-child(3){
+    font-size: 10px;
+    animation: mail 2s ;
+  }
+ 
+
+  .images>div {
+    /* border: 1px solid white; */
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+
+  }
+
+  .techstack>h1 {
+    font-size: 25px;
+  }
+  .sec{
+    margin-top: 50px;
+  }
+  .resbtn{
+    width: 180px;
+    font-size: 15px;
+  }
+  .head{
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .introh2{
+    font-size: 15px;
+    /* border: 1px solid white; */
+    width: 50%;
+    /* border: 1px solid white; */
+    width: 90%;
+  }
+  .intropara{
+    /* border: 1px solid white; */
+    font-size: 12px;
+    line-height: 20px;
+    width: 90%;
+    margin-bottom: 100px;
+  }
+  .firstProject, .secondProject{
+    display: block;
+  }
+  .deschead{
+    font-size: 22px;
+  }
+  .descp{
+    font-size: 12px;
+    /* border: 1px solid white; */
+    width: 90%;
+    
+    margin: 20px auto 20px auto;
+  }.btn{
+    font-size: 11px;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+   width: 150px;
+  }
+  hr{
+    width: 60%;
+  }
+  .link{
+    font-size: 15px;
+  }
+  .links
+  {
+    margin: 20px 0 20px 0;
+  }
+  .primg{
+    margin-top: 20px;
+    width: 80%;
+    margin: 20px auto 20px auto;
+  }
+  #contact{
+    display: block;
+  }
+  #contact>div:nth-child(1){
+    width: 90%;
+    margin: auto;
+  }
+  #contact>div:nth-child(3){
+    width: 90%;
+    margin: auto;
+   
+  }
+  
+  .chead{
+    font-size: 15px;
+  }
+  .chead+h2{
+    font-size: 12px;
+  }.ctext>span>img{
+    height: 30px;
+    margin-left: 20px;
+  }
+  .cform>input{
+    font-size: 13px;
+    height: 50px;
+  }
+  #msg{
+    font-size: 13px;
+  }
+ #dsaC{
+  display: grid;
+  /* border: 1px solid white; */
+  grid-template-columns:repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  /* border: 1px solid white; */
+  margin: 40px auto 40px auto;
+ }
+ .so{
+  font-size: 13px;
+  width: 90px;
+  height: 90px;
+  /* margin-left: 90px; */
+  border: 1px solid white;
+ }
+ .sm>h1{
+  font-size: 15px;
+  /* border: 1px solid white; */
+  text-align: center;
+ }
+ .sm>img{
+   height: 20px;
+   width: 20px;
+ }
+ .sm>a{
+  font-size: 10px;
+  /* border: 1px solid white; */
+  margin-left: -33px;
+ }
+ 
+}
+.download{
+  /* border: 1px solid white; */
+  display: grid;
+  text-decoration: none;
 }
