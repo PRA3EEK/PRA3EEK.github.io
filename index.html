@@ -23,7 +23,7 @@
             <p>
                JAVA Developer/Programmer.
             </p>
-            <p class="mail">Drop a mail @prateekchauhan0004@gmail.com</p>
+            <p class="mail" id="mail">Drop a mail @prateekchauhan0004@gmail.com<img src="https://cdn-user-icons.flaticon.com/75639/75639268/1663478962574.svg?token=exp=1663479864~hmac=daebcbf7f519714127c950cbff58da80" alt="" onclick="copyText()"></p>
          </div>
 
          <div class="sec">
@@ -218,6 +218,13 @@
    document.querySelector("#prj2git").addEventListener("click", fun = () => {
       window.location.href = "https://github.com/PRA3EEK/ethereal-mask-9914"
    })
+
+   function copyText() {
+     let text = document.getElementById("mail").innerText;
+     let arr = text.split(" ");
+     navigator.clipboard.writeText(arr[3]);
+    alert("Text copied to clipboard!");
+   }
 </script>
 
 </html>

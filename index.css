@@ -647,8 +647,14 @@ margin-top: 70px;
   /* border: 1px solid; */
   color: white;
   font-size: 15px;
-}
 
+}
+.mail>img{
+  /* border: 1px solid white; */
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;cursor: pointer;
+}
 @keyframes mail{
 0%{
   opacity: 0;
