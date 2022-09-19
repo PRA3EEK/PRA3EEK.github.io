@@ -7,11 +7,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Prateek Chauhan - Web Developer, Programmer</title>
    <link rel="stylesheet" href="index.css">
-
+ 
 </head>
-<style>
 
-</style>
 
 <body>
    <div class="container">
@@ -130,6 +128,14 @@
             </div>
          </div>
       </div>
+      <section id="github">
+         <h1 class="reveal head">GITHUB CONTRIBUTION</h1>
+         <div class="calendar reveal">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+      </section>
+     
       <section id="fourth" class="reveal">
          <span>
             <h1 class="head">CONTACT ME</h1>
@@ -185,6 +191,9 @@
       </section>
 
 </body>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
 <script>
    window.addEventListener("scroll", reveal);
 
@@ -231,6 +240,18 @@
    document.getElementById("img2").addEventListener("click", () => {
      window.location.href = "https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/"
    })
+  
+   GitHubCalendar(".calendar", "your-username");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "pra3eek", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "pra3eek", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=pra3eek`)
+       }
+    }).then(r => r.text())
 </script>
 
 </html>
