@@ -814,12 +814,7 @@ margin-top: 70px;
  .sm>a{
   font-size: 12px;
  }
- .text-muted{
-  font-size: 10px;
- }
- .contrib-number{
-  font-size: 13px;
- }
+
 }
 
 @media all and (max-width :700px) and (min-width:200px) {
@@ -978,12 +973,7 @@ margin-top: 70px;
   /* border: 1px solid white; */
   margin-left: -33px;
  }
- .text-muted{
-  font-size: 8px;
- }
- .contrib-number{
-  font-size: 10px;
- }
+
 }
 .download{
   /* border: 1px solid white; */
