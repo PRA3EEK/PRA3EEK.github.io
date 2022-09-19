@@ -104,12 +104,12 @@
                <h2>2022</h2>
             </div>
             <div class="primg">
-               <img src="Screenshot (78).png" alt="" class="pr1img">
+               <img src="Screenshot (78).png" alt="" class="pr1img" id="img1">
             </div>
          </div>
          <div class="secondProject reveal">
             <div class="primg">
-               <img src="Screenshot (79).png" alt="" class="pr2img">
+               <img src="Screenshot (79).png" alt="" class="pr2img" id="img2">
             </div>
             <div>
                <h1 class="deschead">MailChimp clone</h1>
@@ -225,6 +225,12 @@
      navigator.clipboard.writeText(arr[3]);
     alert("Text copied to clipboard!");
    }
+   document.getElementById("img1").addEventListener("click", () => {
+     window.location.href = "https://stirring-marzipan-5d4585.netlify.app/"
+   })
+   document.getElementById("img2").addEventListener("click", () => {
+     window.location.href = "https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/"
+   })
 </script>
 
 </html>
