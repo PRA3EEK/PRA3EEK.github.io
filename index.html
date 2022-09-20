@@ -7,7 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Prateek Chauhan - Web Developer, Programmer</title>
    <link rel="stylesheet" href="index.css">
-  
+
 </head>
 
 
@@ -132,11 +132,12 @@
       </div>
       <section id="github">
          <h1 class="reveal head">GITHUB CONTRIBUTION</h1>
-         <div class="calendar reveal">
+         <div class="reveal calendar">
             <!-- Loading stuff -->
             Loading the data just for you.
          </div>
       </section>
+
 
       <section id="fourth" class="reveal">
          <span>
@@ -190,14 +191,14 @@
             </div>
          </div>
       </section>
-      <script src="https://smtpjs.com/v3/smtp.js">
-      </script>
+     
 </body>
 
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+<script src="https://smtpjs.com/v3/smtp.js">
 </script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
+
 <script>
    window.addEventListener("scroll", reveal);
 
@@ -245,7 +246,7 @@
       window.location.href = "https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/"
    })
 
-   GitHubCalendar(".calendar", "your-username");
+   GitHubCalendar(".calendar", "pra3eek");
 
    // or enable responsive functionality:
    GitHubCalendar(".calendar", "pra3eek", { responsive: true });
@@ -257,6 +258,8 @@
       }
    }).then(r => r.text())
 
+
+
    sendemail = () => {
       Email.send({
          Host: "smtp.elasticemail.com",
@@ -265,7 +268,7 @@
          To: "prateekchauhan0004@gmail.com",
          From: "prateekchauhan0004@gmail.com",
          Subject: "Portfolio Enquriy",
-         Body: document.getElementById("msg").value+" "+document.getElementById("num").value+" "+document.getElementById("email").value+" "+document.getElementById("name").value,
+         Body: document.getElementById("msg").value + " " + document.getElementById("num").value + " " + document.getElementById("email").value + " " + document.getElementById("name").value,
       }).then(
          message => alert("Message has been sent!")
       );

@@ -981,6 +981,19 @@ margin-top: 70px;
   text-decoration: none;
 }
 
+
+
+
+
+.text-muted{
+  color: #c3073f;
+}
+.float-right{
+  color: #c3073f;
+}
+#github>h1{
+  text-align: center;
+}
 :root {
   --color-calendar-graph-day-bg: #dddbdb;
   --color-calendar-graph-day-L1-bg: #39dd34;
@@ -1015,7 +1028,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar {
     font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
+    /* border: 1px solid #DDDDDD; */
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
@@ -1063,8 +1076,8 @@ rect.ContributionCalendar-day[data-level='4'] {
 .contrib-column {
     padding: 15px 0;
     text-align: center;
-    border-left: 1px solid #ddd;
-    border-top: 1px solid #ddd;
+    /* border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd; */
     font-size: 11px;
 }
 
@@ -1085,7 +1098,7 @@ rect.ContributionCalendar-day[data-level='4'] {
     line-height: 1.3em;
     font-size: 24px;
     display: block;
-    color: #333;
+    color: white;
 }
 
 .calendar img.spinner {
