@@ -985,14 +985,15 @@ margin-top: 70px;
 
 
 
+
+#github>h1{
+  text-align: center;
+}
 .text-muted{
   color: #c3073f;
 }
 .float-right{
   color: #c3073f;
-}
-#github>h1{
-  text-align: center;
 }
 :root {
   --color-calendar-graph-day-bg: #dddbdb;
