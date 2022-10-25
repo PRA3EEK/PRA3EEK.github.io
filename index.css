@@ -1419,7 +1419,12 @@ border-color: #c3073f;
   /* border: 1px solid white; */
   margin-left: -33px;
  }
-
+ .second{
+  /* border: 1px solid; */
+  height: 150px;
+  width: 150px;
+  margin: auto;
+ }
 }
 
 
