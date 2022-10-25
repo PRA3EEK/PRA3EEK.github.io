@@ -29,16 +29,14 @@ html{
   background-attachment: fixed;
   
 }
-/* #first{
-  padding: 100px 0 0 0;
-} */
+
 #top{
   cursor: pointer;
 }
 .about {
   /* border: 1px solid white; */
-  height: 100vh;
-  margin-top: 30px;
+  height: 80vh;
+  margin-top: 100px;
   width: 100%;
   display: grid;
   justify-content: center;
@@ -1040,6 +1038,7 @@ border-color: #c3073f;
   width: 50%;
  left: 47%;
  display: none;
+ top: 0%;
  
  
 }
@@ -1065,6 +1064,7 @@ border-color: #c3073f;
   width: 100%;
   cursor: pointer;
 }
+
 @media all and (max-width :1300px) and (min-width:700px) {
   
   
@@ -1094,7 +1094,7 @@ border-color: #c3073f;
   }
 
   .first {
-    height: 82px;
+    height: 10px;
     padding: 20px;
   }
 
@@ -1113,6 +1113,8 @@ border-color: #c3073f;
   }
   .sec{
     margin-top: 100px;
+    /* border: 1px solid white; */
+  
   }
   .resbtn{
     width: 200px;
@@ -1162,7 +1164,9 @@ border-color: #c3073f;
     margin-top: 20px;
     width: 80%;
     margin: 20px auto 20px auto;
+   
   }
+
   #contact{
     display: block;
   }
@@ -1234,6 +1238,7 @@ border-color: #c3073f;
     display: grid;
 
   }
+  
  .navIInd{
   display: none;
  }
@@ -1249,6 +1254,10 @@ border-color: #c3073f;
   grid-template-columns: 40% 30%;
  justify-content: center;
   column-gap: 20%;
+ }
+ .first{
+  /* border: 1px solid white; */
+  /* margin-bottom: -150px; */
  }
   .about>.first>h1 {
     font-size: 20px;
@@ -1288,7 +1297,11 @@ border-color: #c3073f;
     font-size: 25px;
   }
   .sec{
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    /* border: 1px solid white; */
+  }
+  #navabar{
+    /* height: 70px; */
   }
   .resbtn{
     width: 180px;
@@ -1406,7 +1419,7 @@ border-color: #c3073f;
   /* border: 1px solid white; */
   margin-left: -33px;
  }
- 
+
 }
 
 
