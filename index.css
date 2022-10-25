@@ -35,7 +35,7 @@ html{
 }
 .about {
   /* border: 1px solid white; */
-  height: 80vh;
+  height: 500px;
   margin-top: 100px;
   width: 100%;
   display: grid;
@@ -1088,9 +1088,10 @@ border-color: #c3073f;
   }
   .about {
     display: flex;
-
+    
     align-items: center;
     flex-direction: column;
+    height: 750px;
   }
 
   .first {
@@ -1115,6 +1116,10 @@ border-color: #c3073f;
     margin-top: 100px;
     /* border: 1px solid white; */
   
+  }
+  .second{
+    height: 200px;
+    width: 200px;
   }
   .resbtn{
     width: 200px;
@@ -1271,6 +1276,7 @@ border-color: #c3073f;
 
     align-items: center;
     flex-direction: column;
+   /* height: 500px; */
   }
 
   .about>.first>p:nth-child(2) {
