@@ -7,7 +7,7 @@ function reveal() {
    for (let i = 0; i < reveals.length; i++) {
       let windowHeight = window.innerHeight;
       let revealTop = reveals[i].getBoundingClientRect().top;
-      let revealPoint = 150;
+      let revealPoint = 50;
 
       if (revealTop < windowHeight - revealPoint) {
          reveals[i].classList.add("active");
@@ -73,3 +73,18 @@ GitHubCalendar(".calendar", "pra3eek",{ responsive: true }, {
      return fetch(`https://your-proxy.com/github?user=pra3eek`)
    }
 }).then(r => r.text())
+
+document.querySelector("#cross").addEventListener("click", fun = () => {
+ document.getElementById("drop_down").style.display="none";
+})
+
+document.getElementById("menu").addEventListener("click", fun = () => {
+   document.getElementById("drop_down").style.display="block";
+   // document.getElementById("drop_down").style.visibility="visible";
+   document.getElementById("drop_down").style.width="50%";
+})
+
+document.getElementById("top").addEventListener("click", fun = () => {
+   window.scrollTo(0,0)
+   // console.log("prateek chauhan");
+})
