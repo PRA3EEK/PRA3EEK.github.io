@@ -88,3 +88,12 @@ document.getElementById("top").addEventListener("click", fun = () => {
    window.scrollTo(0,0)
    // console.log("prateek chauhan");
 })
+
+document.getElementById("home").addEventListener("click", fun = () => {
+   window.scrollTo(0,0)
+   // console.log("prateek chauhan");
+})
+document.getElementById("home2").addEventListener("click", fun = () => {
+   window.scrollTo(0,0)
+   // console.log("prateek chauhan");
+})
