@@ -366,19 +366,26 @@ html{
   display: grid;
   grid-template-columns: 30% 50%;
   justify-content: space-around;
+  /* align-items: center; */
   /* height: 150px; */
-
+  flex-shrink: 0;
   background-position: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  width: 100%;
+ 
 }
 
 .secondProject {
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 50% 30%;
   justify-content: space-around;
   /* border: 1px solid red; */
   /* height: 150px; */
-  margin-top: 100px;
+  background-position: center;
+  flex-shrink: 0;
+  /* margin-top: 50px; */
+  width: 100%;
 }
 
 .firstProject>div {
@@ -422,6 +429,12 @@ html{
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   padding: 20px;
+  /* margin: 20px; */
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  /* height: 80%; */
   border-radius: 10px;
 
 }
@@ -437,7 +450,7 @@ html{
 .secondProject>div:nth-child(2) {
   display: grid;
   align-items: center;
-
+ 
 }
 
 .link{
@@ -1082,6 +1095,34 @@ background: transparent;
 .cards>div>img{
   width: 100%;
 }
+
+#slider{
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+/* #slider::-webkit-scrollbar {
+  width: 1em;
+} */
+
+
+
+#slider::-webkit-scrollbar {
+  border-radius: 10px;
+  height: 8px;
+  
+  /* background-color: #00bd86; */
+  /* outline: 2px solid slategrey; */
+}
+
+#slider::-webkit-scrollbar:vertical {
+  display: none;
+}
+#slider>div{
+  scroll-snap-align: start;
+}
 @media all and (max-width :1300px) and (min-width:700px) {
   
   .calender{
@@ -1187,6 +1228,7 @@ background: transparent;
   .primg{
     margin-top: 20px;
     width: 80%;
+    
     margin: 20px auto 20px auto;
    
   }
