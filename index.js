@@ -65,7 +65,10 @@ sendemail = () => {
    );
 }
 
+redirectResume = () => {
 
+window.open('https://drive.google.com/file/d/1gYfzYS4mWK-hAWkzaXSDH0IXSGvFdr4D/view?usp=sharing','_blank')
+}
 
 
 
