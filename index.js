@@ -18,17 +18,20 @@ function reveal() {
 }
 
 document.querySelector("#prj1web").addEventListener("click", fun = () => {
-   window.location.href = "https://stirring-marzipan-5d4585.netlify.app/"
+   // window.location.href = "https://stirring-marzipan-5d4585.netlify.app/"
+   window.open('https://stirring-marzipan-5d4585.netlify.app/', '_blank');
 })
 document.querySelector("#prj1git").addEventListener("click", fun = () => {
-   window.location.href = "https://github.com/Sagar1079/asos_project"
+  
+   window.open('https://github.com/Sagar1079/asos_project', '_blank');
 })
 document.querySelector("#prj2web").addEventListener("click", fun = () => {
-   window.location.href = "https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/"
+
+   window.open('https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/', '_blank');
 
 })
 document.querySelector("#prj2git").addEventListener("click", fun = () => {
-   window.location.href = "https://github.com/PRA3EEK/ethereal-mask-9914"
+   window.open('https://github.com/PRA3EEK/ethereal-mask-9914', '_blank');
 })
 
 function copyText() {
@@ -38,10 +41,10 @@ function copyText() {
    alert("Text copied to clipboard!");
 }
 document.getElementById("img1").addEventListener("click", () => {
-   window.location.href = "https://stirring-marzipan-5d4585.netlify.app/"
+   window.open('https://stirring-marzipan-5d4585.netlify.app/', '_blank');
 })
 document.getElementById("img2").addEventListener("click", () => {
-   window.location.href = "https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/"
+   window.open('https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/', '_blank');
 })
 
 
@@ -56,7 +59,7 @@ sendemail = () => {
       To: "prateekchauhan0004@gmail.com",
       From: "prateekchauhan0004@gmail.com",
       Subject: "Portfolio Enquriy",
-      Body: document.getElementById("msg").value + " " + document.getElementById("num").value + " " + document.getElementById("email").value + " " + document.getElementById("name").value,
+      Body: "message is: "+document.getElementById("msg").value + ", " + "mobile number is "+document.getElementById("num").value + ", " + "email is "+document.getElementById("email").value + ", " + "name is: "+document.getElementById("name").value,
    }).then(
       message => alert("Message has been sent!")
    );
