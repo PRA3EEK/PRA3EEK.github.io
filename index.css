@@ -197,22 +197,16 @@ html{
   /* border: 1px solid red; */
   display: grid;
   width: 70%;
-  grid-template-columns: repeat(4, 15%);
+  grid-template-columns: repeat(4, 11%);
   justify-content: space-around;
   grid-row-gap: 60px;
   margin: auto;
   /* margin-top: 40px; */
   cursor: pointer;
+  color: white;
 }
 
-.images>div {
-  /* border: 1px solid white; */
-  width: 80px;
-  height: 80px;
-  transition: 0.5s;
 
-
-}
 
 .images>div>img {
   border-radius: 10px;
@@ -412,7 +406,7 @@ html{
 
 .descp {
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 

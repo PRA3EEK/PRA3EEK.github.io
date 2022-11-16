@@ -34,6 +34,24 @@ document.querySelector("#prj2git").addEventListener("click", fun = () => {
    window.open('https://github.com/PRA3EEK/ethereal-mask-9914', '_blank');
 })
 
+document.querySelector("#prj3web").addEventListener("click", fun = () => {
+
+   window.open('https://drive.google.com/file/d/1g-E20LUYHIOtJLoUsqg8fKt0MBWPKs3Y/view?usp=sharing', '_blank');
+
+})
+document.querySelector("#prj3git").addEventListener("click", fun = () => {
+   window.open('https://github.com/Sab01123/illegal-pencil-7993', '_blank');
+})
+
+document.querySelector("#prj3web").addEventListener("click", fun = () => {
+
+   window.open('https://drive.google.com/file/d/11GCSYsspkCg08ySQTLrRJ2UV8C9_yZsj/view?usp=sharing', '_blank');
+
+})
+document.querySelector("#prj3git").addEventListener("click", fun = () => {
+   window.open('https://github.com/PRA3EEK/equal_slip_6381', '_blank');
+})
+
 function copyText() {
    let text = document.getElementById("mail").innerText;
    let arr = text.split(" ");
@@ -46,6 +64,13 @@ document.getElementById("img1").addEventListener("click", () => {
 document.getElementById("img2").addEventListener("click", () => {
    window.open('https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/', '_blank');
 })
+document.getElementById("img3").addEventListener("click", () => {
+   window.open('https://drive.google.com/file/d/1g-E20LUYHIOtJLoUsqg8fKt0MBWPKs3Y/view?usp=sharing', '_blank');
+})
+document.getElementById("img4").addEventListener("click", () => {
+   window.open('https://drive.google.com/file/d/11GCSYsspkCg08ySQTLrRJ2UV8C9_yZsj/view?usp=sharing', '_blank');
+})
+
 
 
 
