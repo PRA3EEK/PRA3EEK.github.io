@@ -166,13 +166,16 @@ html{
 }
 
 .head {
-  margin: 120px 0 60px 0;
+  margin: 80px 0 40px 0;
+  /* border: 1px solid white; */
   font-size: 40px;
   color: #c3073f;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
   /* margin-bottom: 90px; */
    /* margin-top: 120px; */
-  /* padding: 20px; */
+  /* padding: 40px 0 20px 0; */
 }
 
 .btn {
@@ -348,13 +351,55 @@ html{
 /*  */
 /*  */
 .projects {
-  padding-top: 60px;
-  margin-top: 60px;
-  /* border: 1px solid; */
-
+  /* padding-top: 60px; */
+  /* margin: 60px auto 0 auto; */
+  margin: 0 auto 0 auto;
+  /* border: 1px solid white; */
+  height: 400px;
   text-align: center;
-}
 
+   position: relative;
+   width: 98%;
+
+}
+.carousel_container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid white; */
+  overflow-x: hidden;
+}
+.carousel_button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 100;
+  height: 30px;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+
+}
+.carousel_button>img{
+  width: 100%;
+}
+.left{
+ left: 0;
+
+}
+.right{
+  right: 0;
+}
+.slide{
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+
+}
 .firstProject {
   /* border: 1px solid red; */
   display: grid;
@@ -362,11 +407,11 @@ html{
   justify-content: space-around;
   /* align-items: center; */
   /* height: 150px; */
-  flex-shrink: 0;
-  background-position: center;
+  /* flex-shrink: 0;
+  background-position: center; */
   /* margin-top: 50px; */
-  width: 100%;
  
+
 }
 
 .secondProject {
@@ -376,10 +421,10 @@ html{
   justify-content: space-around;
   /* border: 1px solid red; */
   /* height: 150px; */
-  background-position: center;
-  flex-shrink: 0;
+  /* background-position: center;
+  flex-shrink: 0; */
   /* margin-top: 50px; */
-  width: 100%;
+
 }
 
 .firstProject>div {
@@ -439,6 +484,10 @@ html{
   backdrop-filter: blur(2px);
   padding: 20px;
   border-radius: 10px;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .secondProject>div:nth-child(2) {
@@ -492,7 +541,7 @@ hr {
   grid-template-columns: 35% 20% 40%;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 #contact>div{
   color: white;
@@ -629,13 +678,14 @@ margin-top: 70px;
 .intropara{
   /* border: 1px solid white; */
   width: 70%;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 0px auto;
   font-size: 1.5rem;
   text-align: center;
   color: white;
   line-height: 50px;
   letter-spacing: 2px;
   /* margin-top: -40px; */
+  width: 85%;
 }
 .introh2{
   /* border: 1px solid white; */
@@ -644,7 +694,7 @@ margin-top: 70px;
   font-size:2rem;
   text-align: center;
   color: white;
-  margin: -40px auto 20px auto;
+  /* margin: -40px auto 20px auto; */
 }
 .resbtn{
   height: 3rem;
@@ -743,7 +793,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar {
     font-family: Helvetica, arial;
-    /* border: 1px solid #DDDDDD; */
+    
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
@@ -1091,11 +1141,13 @@ background: transparent;
 }
 
 #slider{
-  display: flex;
-  overflow-x: auto;
+  /* display: flex; */
+  /* overflow-x: hidden; */
   width: 100%;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
+  /* -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory; */
+  transition: transform 500ms ease-in;
+  
 }
 /* #slider::-webkit-scrollbar {
   width: 1em;
@@ -1117,7 +1169,23 @@ background: transparent;
 #slider>div{
   scroll-snap-align: start;
 }
+.skillName{
+  color: white;
+}
+
+
 @media all and (max-width :1300px) and (min-width:700px) {
+  .skillName{
+
+     font-size: 10px;
+
+  }
+  .firstProject{
+    grid-template-columns: 55% 40%;
+  }
+  .secondProject{
+    grid-template-columns: 40% 55%;
+  }
   
   .calender{
     padding: 0 50px 0 50px;
@@ -1155,8 +1223,8 @@ background: transparent;
 
   .images>div {
     /* border: 1px solid white; */
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     transition: 0.5s;
 
   }
@@ -1181,7 +1249,7 @@ background: transparent;
   }
   .head{
     font-size: 30px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
   .introh2{
     font-size: 20px;
@@ -1193,20 +1261,20 @@ background: transparent;
     font-size: 1rem;
     line-height: 25px;
     width: 90%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
-  .firstProject, .secondProject{
+  /* .firstProject, .secondProject{
     display: block;
-  }
+  } */
   .deschead{
     font-size: 22px;
   }
   .descp{
     font-size: 15px;
     /* border: 1px solid white; */
-    width: 60%;
-    
-    margin: 20px auto 20px auto;
+    width: 100%;
+    /* border: 1px solid white; */
+    margin: 10px auto 10px auto;
   }.btn{
     font-size: 12px;
    margin-bottom: 20px;
@@ -1258,7 +1326,7 @@ background: transparent;
   /* border: 1px solid white; */
   margin: 40px auto 40px auto;
  }
- .so{.navlink
+ .so{
   font-size: 25px;
   width: 150px;
   height: 150px;
@@ -1288,7 +1356,7 @@ background: transparent;
 }
  .navIst>img{
  width: 100%;
- height: auto;
+ /* height: auto; */
  }
  .contrib-number{
   font-size: 15px;
@@ -1299,9 +1367,14 @@ background: transparent;
  .navIInd{
   column-gap: 3%;
  }
+ 
 }
 
 @media all and (max-width :700px) and (min-width:200px) {
+
+   .skillName{
+  font-size: 8px;
+   }
 
   .float-right{
     /* color: #c3073f; */
@@ -1382,27 +1455,22 @@ background: transparent;
     width: 50px;
     height: 50px;
     transition: 0.5s;
+ 
 
   }
 
   .techstack>h1 {
     font-size: 25px;
   }
-  .sec{
-    /* margin-top: 50px; */
-    /* border: 1px solid white; */
-  }
-  #navabar{
-    /* height: 70px; */
-  }
+  
   .resbtn{
     width: 180px;
     font-size: 15px;
   }
   .head{
     font-size: 25px;
-    margin-top: 30px;
-    padding: 100px 0 0 0;
+    /* margin-top: 30px; */
+    /* padding: 100px 0 0 0; */
   }
   .introh2{
     font-size: 15px;
@@ -1516,6 +1584,10 @@ background: transparent;
   height: 150px;
   width: 150px;
   margin: auto;
+ }
+ .projects{
+  height: 700px;
+  /* border: 1px solid white; */
  }
 }
 

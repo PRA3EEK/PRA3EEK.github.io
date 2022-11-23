@@ -128,3 +128,44 @@ document.getElementById("home2").addEventListener("click", fun = () => {
    window.scrollTo(0,0)
    // console.log("prateek chauhan");
 })
+
+
+
+
+
+const track = document.getElementById("slider");
+const slides = Array.from(track.children);
+const slideSize = slides[0].getBoundingClientRect();
+const slideWidth = slideSize.width;
+
+const buttons = document.querySelectorAll(".carousel_button");
+const leftButton = buttons[0];
+const rightButton = buttons[1];
+
+const setSlidePosition = (slide, Index) => {
+
+   slide.style.left = slideWidth * Index + 'px';
+}
+slides.forEach(setSlidePosition);
+
+const moveToSlide = (track, currentSlide, targetSlide) => {
+
+
+   track.style.transform = 'translateX(-'+targetSlide.style.left+')';
+   currentSlide.classList.remove('current_slide');
+   targetSlide.classList.add('current_slide');
+
+}
+
+leftButton.addEventListener("click",  e => {
+   const currentSlide = track.querySelector(".current_slide");
+   const prevSlide = currentSlide.previousElementSibling;
+   moveToSlide(track, currentSlide, prevSlide);
+})
+
+rightButton.addEventListener("click",e => {
+// move the slide
+const currentSlide = track.querySelector(".current_slide");
+const nextSlide = currentSlide.nextElementSibling;
+moveToSlide(track, currentSlide, nextSlide)
+})
