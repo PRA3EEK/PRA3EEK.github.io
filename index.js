@@ -52,6 +52,16 @@ document.querySelector("#prj3git").addEventListener("click", fun = () => {
    window.open('https://github.com/PRA3EEK/equal_slip_6381', '_blank');
 })
 
+
+document.querySelector("#prj6web").addEventListener("click", fun = () => {
+
+   window.open('https://stellar-swan-590720.netlify.app/', '_blank');
+
+})
+document.querySelector("#prj6git").addEventListener("click", fun = () => {
+   window.open('https://github.com/PRA3EEK/Sudoku_Solver', '_blank');
+})
+
 function copyText() {
    let text = document.getElementById("mail").innerText;
    let arr = text.split(" ");
@@ -163,7 +173,7 @@ leftButton.addEventListener("click",  e => {
    moveToSlide(track, currentSlide, prevSlide);
 })
 
-rightButton.addEventListener("click",e => {
+rightButton.addEventListener("click", e => {
 // move the slide
 const currentSlide = track.querySelector(".current_slide");
 const nextSlide = currentSlide.nextElementSibling;
