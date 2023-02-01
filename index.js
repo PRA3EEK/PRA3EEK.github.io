@@ -17,50 +17,7 @@ function reveal() {
    }
 }
 
-document.querySelector("#prj1web").addEventListener("click", fun = () => {
-   // window.location.href = "https://stirring-marzipan-5d4585.netlify.app/"
-   window.open('https://stirring-marzipan-5d4585.netlify.app/', '_blank');
-})
-document.querySelector("#prj1git").addEventListener("click", fun = () => {
-  
-   window.open('https://github.com/Sagar1079/asos_project', '_blank');
-})
-document.querySelector("#prj2web").addEventListener("click", fun = () => {
 
-   window.open('https://verdant-gecko-cf4194.netlify.app/navbarbyvicky/', '_blank');
-
-})
-document.querySelector("#prj2git").addEventListener("click", fun = () => {
-   window.open('https://github.com/PRA3EEK/ethereal-mask-9914', '_blank');
-})
-
-document.querySelector("#prj3web").addEventListener("click", fun = () => {
-
-   window.open('https://drive.google.com/file/d/1g-E20LUYHIOtJLoUsqg8fKt0MBWPKs3Y/view?usp=sharing', '_blank');
-
-})
-document.querySelector("#prj3git").addEventListener("click", fun = () => {
-   window.open('https://github.com/Sab01123/illegal-pencil-7993', '_blank');
-})
-
-document.querySelector("#prj3web").addEventListener("click", fun = () => {
-
-   window.open('https://drive.google.com/file/d/11GCSYsspkCg08ySQTLrRJ2UV8C9_yZsj/view?usp=sharing', '_blank');
-
-})
-document.querySelector("#prj3git").addEventListener("click", fun = () => {
-   window.open('https://github.com/PRA3EEK/equal_slip_6381', '_blank');
-})
-
-
-document.querySelector("#prj6web").addEventListener("click", fun = () => {
-
-   window.open('https://stellar-swan-590720.netlify.app/', '_blank');
-
-})
-document.querySelector("#prj6git").addEventListener("click", fun = () => {
-   window.open('https://github.com/PRA3EEK/Sudoku_Solver', '_blank');
-})
 
 function copyText() {
    let text = document.getElementById("mail").innerText;
