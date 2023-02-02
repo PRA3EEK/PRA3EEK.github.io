@@ -159,16 +159,17 @@ html{
 }
 
 .btn {
-  height: 2.5vw;
-  width: 10vw;
-  font-size: 100%;
+  height: 3vw;
+  width: 45%;
+  font-size: 1vw;
   color: white;
   border: 2px solid white;
   background-image: linear-gradient(to right, #c3073f, #c3073f, #1a1a1d, #1a1a1d);
   background-size: 300%;
   background-position: -50%;
   transition: 1s;
-  display: flex;
+  display: flex
+  ;
   text-decoration: none;
   justify-content: center;
   align-items: center;
@@ -469,7 +470,6 @@ html{
 .secondProject>div:nth-child(2) {
   display: grid;
   align-items: center;
- 
 }
 
 .link{
@@ -1245,7 +1245,7 @@ background: transparent;
  
 }
 
-@media all and (max-width :700px) and (min-width:200px) {
+@media all and (max-width :700px) and (min-width:0px) {
 
    .skillName{
   font-size: 8px;
@@ -1351,11 +1351,10 @@ background: transparent;
     width: 90%;
     
     margin: 20px auto 20px auto;
-  }.btn{
-    font-size: 11px;
-   margin-bottom: 20px;
-   letter-spacing: 2px;
-   width: 150px;
+  }
+  .btn{
+    height: 4vw;
+    font-size: 3vw;
   }
   hr{
     width: 60%;
