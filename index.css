@@ -1068,7 +1068,7 @@ background: transparent;
 }
 
 
-@media all and (max-width :1300px) and (min-width:700px) {
+@media all and (max-width :1000px) and (min-width:700px) {
   .skillName{
 
      font-size: 10px;
