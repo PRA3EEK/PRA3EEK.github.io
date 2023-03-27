@@ -66,4 +66,4 @@ document.getElementById("menu").addEventListener("click", fun = () => {
 
 
  const navigationHeight = document.getElementById("navbar").offsetHeight;
- document.documentElement.style.setProperty("--scroll-padding", navigationHeight+"px");
+ document.documentElement.style.setProperty("--scroll-padding", navigationHeight+2+"px");
