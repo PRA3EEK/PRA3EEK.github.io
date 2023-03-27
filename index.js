@@ -1,22 +1,3 @@
-window.addEventListener("scroll", reveal);
-
-function reveal() {
-   let reveals = document.querySelectorAll(".reveal");
-
-
-   for (let i = 0; i < reveals.length; i++) {
-      let windowHeight = window.innerHeight;
-      let revealTop = reveals[i].getBoundingClientRect().top;
-      let revealPoint = 50;
-
-      if (revealTop < windowHeight - revealPoint) {
-         reveals[i].classList.add("active");
-      } else {
-         reveals[i].classList.remove("active");
-      }
-   }
-}
-
 
 
 function copyText() {
@@ -73,66 +54,16 @@ GitHubCalendar(".calendar", "pra3eek",{ responsive: true }, {
 }).then(r => r.text())
 
 document.querySelector("#cross").addEventListener("click", fun = () => {
- document.getElementById("drop_down").style.display="none";
+ document.getElementById("dropIInd").style.display = 'none'
+ document.getElementById("dropIInd").style.display = '0'
+ document.getElementById("menu").style.display = 'block'
 })
 
 document.getElementById("menu").addEventListener("click", fun = () => {
-   document.getElementById("drop_down").style.display="block";
-   // document.getElementById("drop_down").style.visibility="visible";
-   document.getElementById("drop_down").style.width="50%";
-})
-
-document.getElementById("top").addEventListener("click", fun = () => {
-   window.scrollTo(0,0)
-   // console.log("prateek chauhan");
-})
-
-document.getElementById("home").addEventListener("click", fun = () => {
-   window.scrollTo(0,0)
-   // console.log("prateek chauhan");
-})
-document.getElementById("home2").addEventListener("click", fun = () => {
-   window.scrollTo(0,0)
-   // console.log("prateek chauhan");
+   document.getElementById("menu").style.display = 'none'
+   document.getElementById("dropIInd").style.display='block'
 })
 
 
-
-
-
-const track = document.getElementById("slider");
-const slides = Array.from(track.children);
-const slideSize = slides[0].getBoundingClientRect();
-const slideWidth = slideSize.width;
-
-const buttons = document.querySelectorAll(".carousel_button");
-const leftButton = buttons[0];
-const rightButton = buttons[1];
-
-const setSlidePosition = (slide, Index) => {
-
-   slide.style.left = slideWidth * Index + 'px';
-}
-slides.forEach(setSlidePosition);
-
-const moveToSlide = (track, currentSlide, targetSlide) => {
-
-
-   track.style.transform = 'translateX(-'+targetSlide.style.left+')';
-   currentSlide.classList.remove('current_slide');
-   targetSlide.classList.add('current_slide');
-
-}
-
-leftButton.addEventListener("click",  e => {
-   const currentSlide = track.querySelector(".current_slide");
-   const prevSlide = currentSlide.previousElementSibling;
-   moveToSlide(track, currentSlide, prevSlide);
-})
-
-rightButton.addEventListener("click", e => {
-// move the slide
-const currentSlide = track.querySelector(".current_slide");
-const nextSlide = currentSlide.nextElementSibling;
-moveToSlide(track, currentSlide, nextSlide)
-})
+ const navigationHeight = document.getElementById("navbar").offsetHeight;
+ document.documentElement.style.setProperty("--scroll-padding", navigationHeight+"px");

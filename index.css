@@ -741,7 +741,6 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar {
     font-family: Helvetica, arial;
-    
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
@@ -944,18 +943,22 @@ bottom: 0%;
   width: 100%;
   display: grid;
   grid-template-columns: 30% 70%;
-  height: 100px;
-  top: 0%;
+
+
   
 }
 .navIInd{
-
-  display: flex;
-  justify-content: center;
+  border: 1px solid;
+  padding: 1vw;
+}
+.navIInd>ul{
+  list-style: none;
+  border: 1px solid;
+  font-size: 1.2vw;
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  justify-content: space-between;
   align-items: center;
-  column-gap: 5%;
-
-  
 }
 .navIst{
   height: 70%;
@@ -1045,6 +1048,11 @@ background: transparent;
   width: 100%;
 }
 
+
+
+
+
+
 /* #slider{
   width: 100%;
   transition: transform 500ms ease-in;
@@ -1068,7 +1076,7 @@ background: transparent;
 }
 
 
-@media all and (max-width :1000px) and (min-width:700px) {
+/* @media all and (max-width :1000px) and (min-width:700px) {
   .skillName{
 
      font-size: 10px;
@@ -1243,9 +1251,9 @@ background: transparent;
   column-gap: 3%;
  }
  
-}
+} */
 
-@media all and (max-width :700px) and (min-width:0px) {
+/* @media all and (max-width :700px) and (min-width:0px) {
 
    .skillName{
   font-size: 8px;
@@ -1434,7 +1442,7 @@ background: transparent;
  .projects{
   height: 700px;
  }
-}
+} */
 
 
 
