@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-padding, 5vw);
+    scroll-padding-top: var(--scroll-padding, 5rem);
   }
 body{
   background-color:  white;
@@ -23,12 +23,12 @@ body{
   width: 100%;
   display: grid;
   grid-template-columns: 30% 60%;
-  padding: 1vw;
+  padding: 1rem;
   justify-content: space-around;
   top: 0;
 }
 .container{
-    margin-top: 8vw;
+    margin-top: 8rem;
 }
 .navIst>img{
   width: 100%;
@@ -39,13 +39,13 @@ body{
   align-items: center;
     text-decoration: none;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 
 .navIInd{
- padding: 1vw;
- font-size: 1.2vw;
+ padding: 1rem;
+ font-size: 1.2rem;
 }
 .navIInd>ul{
     list-style: none;
@@ -60,31 +60,31 @@ body{
     display: grid;
     grid-template-columns: 60% 30%;
     justify-content: space-between;
-    width: 85%;
+    width: 100%;
     margin: auto;
 }
 
 .greeting_and_name{
-    font-size: 4vw;
+    font-size: 3rem;
     font-weight: bolder;
     background: -webkit-linear-gradient(#0a0e1a, #353d60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .first, .sec{
-    padding: 2vw;
+    padding: 2rem;
     backdrop-filter: blur(5px);
     color: #0a0e1a;
 }
 
 .copy_img
 {
-    margin: 0 0.5vw 0 0.5vw;
-    width: 1vw;
-    height: 1vw;
+    margin: 0 0.5rem 0 0.5rem;
+    width: 1rem;
+    height: 1rem;
 }
 .normal_txt{
-    font-size: 1.7vw;
+    font-size: 1.5rem;
 }
 .pfp{
     width: 80%;
@@ -93,8 +93,8 @@ body{
 .pfp>img{
     object-fit: contain;
     border-radius: 50%;
-    height: 20vw;
-    width: 20vw;
+    height: 20rem;
+    width: 20rem;
 }
 
 #first{
@@ -102,11 +102,11 @@ body{
     margin: auto;
     object-fit: contain;
     text-align: center;
-    margin-top: 5vw;
+    margin-top: 5rem;
     
   }
   #second, #third{
-    margin-top: 5vw;
+    margin-top: 5rem;
   }
 
 
@@ -123,8 +123,8 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 20%);
     justify-content: space-around;
-    padding: 2vw;
-    grid-row-gap: 1vw;
+    padding: 2rem;
+    grid-row-gap: 1rem;
 }
 .images>div>img{
     width: 40%;
@@ -132,8 +132,8 @@ body{
 .images>div{
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 1vw;
-    border-radius: 1vw;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 #project{
@@ -151,16 +151,16 @@ body{
 }
 
 .secondProject, .firstProject{
-    margin: 2vw 0 2vw 0;
+    margin: 2rem 0 2rem 0;
     box-shadow: rgb(23, 23, 23) 0px 7px 29px 0px;
-    padding: 1vw;
-    border-radius: 0.5vw;
+    padding: 1rem;
+    border-radius: 0.5rem;
     background-color: #1d243d;
   }
   .secondProject>div:nth-child(2), .firstProject>div:nth-child(2){
     display: grid;
     /* align-items: center; */
-    /* grid-row-gap: 0.5vw; */
+    /* grid-row-gap: 0.5rem; */
     color: #c6cacb;
  
 }
@@ -191,8 +191,8 @@ body{
 #github{
     width: 85%;
     display: grid;
-    grid-row-gap: 2vw;
-    margin: 5vw auto auto auto;
+    grid-row-gap: 2rem;
+    margin: 5rem auto auto auto;
 }
 .cards{
     display: grid;
@@ -249,7 +249,7 @@ body{
   }
   
   .float-right{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
  
   
@@ -264,8 +264,8 @@ body{
   }
   .contrib-column{
     display: inline-block;
-    margin: 0 1vw 0 1vw;
-    font-size: 1.5vw;
+    margin: 0 1rem 0 1rem;
+    font-size: 1.5rem;
   }
   .contrib-number{
     display: block;
@@ -273,7 +273,7 @@ body{
   }
 #fourth{
     width: 85%;
-    margin: 5vw auto auto auto;
+    margin: 5rem auto auto auto;
   }
   .ctext{
     display: grid;
@@ -281,11 +281,11 @@ body{
     grid-template-columns: 80% 15%;
   }
   .ctext>div>img{
-    width: 5vw;
-    height: 5vw;
+    width: 5rem;
+    height: 5rem;
   }
   #contact{
-    padding: 2vw;
+    padding: 2rem;
     background: url('/5138237.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -302,9 +302,9 @@ body{
       border: none;
       width: 100%;
       background: transparent;
-      height: 3vw;
-      padding: 0 1vw 0 1vw;
-      font-size: 2vw;
+      height: 3rem;
+      padding: 0 1rem 0 1rem;
+      font-size: 2rem;
       outline: none;
       border-bottom: 1px solid;
     }
@@ -313,8 +313,8 @@ body{
     background: transparent;
     width: 100%;  
     resize: none;
-    padding: 1vw;
-    font-size: 2vw;
+    padding: 1rem;
+    font-size: 2rem;
     outline: none;
     border: none;
     height: 10rem;
@@ -331,7 +331,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 8%);
     justify-content: space-around;
-    padding: 2vw;
+    padding: 2rem;
   }
   .sm>a>img{
     width: 100%;
@@ -341,11 +341,11 @@ body{
     color: white;
     background-color: #353d60;
     border: none;
-    font-size: 1.25vw;
-    padding: 0.5vw;
-    letter-spacing: 0.125vw;
+    font-size: 1rem;
+    padding: 0.5rem;
+    letter-spacing: 0.1rem;
     /* background-color: transparent; */
-    margin: 1vw 1vw 1vw 1vw;
+    margin: 1rem 1rem 1rem 1rem;
     text-decoration: none;
     transition: 0.5s;
     cursor: pointer;
@@ -360,7 +360,7 @@ body{
     text-align: center;
     margin: auto;
     color: #0a0e1a;
-    font-size: 3vw;
+    font-size: 3rem;
   }
   .btnsDivForGitAndVideo{
     /* position: absolute;
@@ -384,30 +384,30 @@ body{
     background-color: #0a0e1a;
   }
   .deschead{
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
   .chead{
-    font-size: 2vw;
+    font-size: 2rem;
   }
   .descp{
-    font-size: 1.2vw;
+    font-size: 1.2rem;
   }
   .link{
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     color: #c6cacb;
     text-decoration: none;
   }
   .introh2{
-    font-size: 2vw;
+    font-size: 2rem;
   }
   .intropara{
-    font-size: 1.2vw;
+    font-size: 1.2rem;
   }
   .skillName{
-    font-size: 1.2vw;
+    font-size: 1.2rem;
   }
  .ts{
-   line-height: 2vw;
+   line-height: 2rem;
  }
  .ts>p{
   display: inline;
@@ -418,18 +418,18 @@ display: none;
 
  }
  #drop_down>div{
-  margin: 1vw 0 1vw 0;
+  margin: 1rem 0 1rem 0;
 
  }
  
  #close{
-  padding: 1vw;
+  padding: 1rem;
   display: grid;
   justify-content: right;
  }
  #close>img{
-  height: 2vw;
-  width: 2vw;
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  }
@@ -437,8 +437,8 @@ display: none;
   opacity: 0;
  }
  #menu{
-  width: 3vw;
-  height: 3vw;
+  width: 3rem;
+  height: 3rem;
  cursor: pointer;
 }
 
@@ -446,34 +446,36 @@ display: none;
   width: 85%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(5, 10%);
-  font-size: 1vw; 
+  grid-template-columns: repeat(5, 17%);
+  font-size: 1rem; 
   justify-content: space-around;
 }
 
  #cert{
-  grid-template-columns: repeat(4, 10%);
+  grid-template-columns: repeat(4, 20%);
    
 }
  #cert>p,#stats>p{
-  border-radius: 0.5vw;
+  border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 1.5vw;
-  width: 10vw;
-  height: 10vw;
+  padding: 1.5rem;
+  /* width: 10rem;
+  height: 10rem; */
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
  }
  #achiev{
-  margin-top: 5vw;
+  margin-top: 5rem;
  }
  
  
  @media all and (max-width:900px){
    
-   
+   html{
+    font-size: 70%;
+   }
    .navIInd{
     display: none;
    }
@@ -490,7 +492,7 @@ display: none;
     align-items: center;
   }
   #drop_down{
-    padding: 0 4vw 0 0;
+    padding: 0 4rem 0 0;
     display: grid;
     justify-content: right;
   }
@@ -500,10 +502,28 @@ display: none;
 
   }
   #dropIInd>div{
-     margin-top: 1vw;
+     margin-top: 1rem;
   }
   #menu{
     transition: 1s;
   }
    
+  }
+
+  @media all and (max-width:690px){
+    html{
+      font-size: 50%;
+    }
+    #project{
+      grid-template-columns: 100%;
+    }
+  }
+
+  @media all and (max-width:400px){
+    html{
+      font-size: 30%;
+    }
+    #project{
+      grid-template-columns: 100%;
+    }
   }
