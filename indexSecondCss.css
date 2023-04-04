@@ -474,7 +474,7 @@ display: none;
  @media all and (max-width:900px){
    
    html{
-    font-size: 70%;
+    font-size: 80%;
    }
    .navIInd{
     display: none;
@@ -512,17 +512,26 @@ display: none;
 
   @media all and (max-width:690px){
     html{
-      font-size: 50%;
+      font-size: 70%;
     }
     #project{
       grid-template-columns: 100%;
+    }
+    .pfp>img{
+      width: 10rem;
+      height: 10rem;
     }
   }
 
   @media all and (max-width:400px){
     html{
-      font-size: 30%;
+      font-size: 60%;
     }
+    .pfp>img{
+      width: 8rem;
+      height: 8rem;
+    }
+   
     #project{
       grid-template-columns: 100%;
     }
