@@ -32,7 +32,7 @@ sendemail = () => {
       To: "prateekchauhan0004@gmail.com",
       From: "prateekchauhan0004@gmail.com",
       Subject: "Portfolio Enquriy",
-      Body: "message is: "+document.getElementById("msg").value + ", " + "mobile number is "+document.getElementById("num").value + ", " + "email is "+document.getElementById("email").value + ", " + "name is: "+document.getElementById("name").value,
+      Body: "message is: " + document.getElementById("msg").value + ", " + "mobile number is " + document.getElementById("num").value + ", " + "email is " + document.getElementById("email").value + ", " + "name is: " + document.getElementById("name").value,
    }).then(
       message => alert("Message has been sent!")
    );
@@ -40,30 +40,30 @@ sendemail = () => {
 
 redirectResume = () => {
 
-window.open('https://drive.google.com/file/d/1gYfzYS4mWK-hAWkzaXSDH0IXSGvFdr4D/view?usp=sharing','_blank')
+   window.open('https://drive.google.com/file/d/1gYfzYS4mWK-hAWkzaXSDH0IXSGvFdr4D/view?usp=sharing', '_blank')
 }
 
 
 
 
 // Use a proxy
-GitHubCalendar(".calendar", "pra3eek",{ responsive: true }, {
-   proxy (pra3eek) {
-     return fetch(`https://your-proxy.com/github?user=pra3eek`)
+GitHubCalendar(".calendar", "pra3eek", { responsive: true }, {
+   proxy(pra3eek) {
+      return fetch(`https://your-proxy.com/github?user=pra3eek`)
    }
 }).then(r => r.text())
 
 document.querySelector("#cross").addEventListener("click", fun = () => {
- document.getElementById("dropIInd").style.display = 'none'
- document.getElementById("dropIInd").style.display = '0'
- document.getElementById("menu").style.display = 'block'
+   document.getElementById("dropIInd").style.display = 'none'
+   document.getElementById("dropIInd").style.display = '0'
+   document.getElementById("menu").style.display = 'block'
 })
 
 document.getElementById("menu").addEventListener("click", fun = () => {
    document.getElementById("menu").style.display = 'none'
-   document.getElementById("dropIInd").style.display='block'
+   document.getElementById("dropIInd").style.display = 'block'
 })
 
 
- const navigationHeight = document.getElementById("navbar").offsetHeight;
- document.documentElement.style.setProperty("--scroll-padding", navigationHeight+2+"px");
+const navigationHeight = document.getElementById("navbar").offsetHeight;
+document.documentElement.style.setProperty("--scroll-padding", navigationHeight + 2 + "px");
