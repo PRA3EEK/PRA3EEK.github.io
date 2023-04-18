@@ -8,7 +8,7 @@
    <title>Prateek Chauhan - Web Developer, Programmer</title>
    <!-- <link rel="stylesheet" href="index.css"> -->
    <link rel="stylesheet" href="indexSecondCss.css">
-   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
 
 </head>
 
@@ -100,7 +100,7 @@
                <p class="normal_txt">
                   JAVA Developer/Programmer.
                </p>
-               <p class="mail normal_txt" id="mail">Drop a mail @prateekchauhan0004@gmail.com<img src="copyimage.svg"
+               <p class="mail normal_txt" id="mail"><img src="copyimage.svg"
                      class="copy_img" alt="" onclick="copyText()"></p>
             </div>
 
@@ -115,10 +115,10 @@
          </div>
 
          <section id="first">
-            <h1 class="head reveal">ABOUT ME</h1>
-            <div class="intro reveal">
-               <h2 class="introh2 reveal">Hi, I am Prateek Chauhan</h2>
-               <p class="intropara reveal">As a dedicated and skilled software developer, I have honed my craft through
+            <h1 class="head">ABOUT ME</h1>
+            <div class="intro">
+               <h2 class="introh2">Hi, I am Prateek Chauhan</h2>
+               <p class="intropara">As a dedicated and skilled software developer, I have honed my craft through
                   5000+ hours of rigorous practice in data structures and algorithms, and coding in Java, Spring, Spring
                   Boot, MySQL, HTML5, CSS3, and JavaScript. I have developed a deep understanding of programming
                   concepts,
@@ -467,7 +467,7 @@
 
                <a href="https://github.com/pra3eek/github-readme-activity-graph"><img
                      alt="prateek chauhan's Activity Graph"
-                     src="https://github-readme-activity-graph.cyclic.app/graph?username=pra3eek&bg_color=ffffff&color=0a0e1a&line=0a0e1a&point=#1589FF&area=true&hide_border=true" /></a>
+                     src="https://github-readme-activity-graph.cyclic.app/graph?username=pra3eek&bg_color=FFFF84&color=4caf50&line=4caf50&point=0a0e1a&area=true&hide_border=true" /></a>
                <!-- [![Ashutosh's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=ashutosh00710&bg_color=fffff0&color=708090&line=24292e&point=24292e&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
              -->
             </div>
@@ -483,20 +483,21 @@
                   <h1 class="chead">Drop it here</h1>
                </div>
                <div>
-                  <img src="downarrow.svg" alt="error">
+                  <!-- <img src="downarrow.svg" alt="error"> -->
                </div>
             </div>
             <div id="contact" class="reveal">
 
                <div>
                   <form class="cform" onsubmit="sendemail(); reset() ; return false;">
-
-                     <input type="text" placeholder="Name" id="name" required><br>
-
-                     <input type="email" placeholder="Email" id="email" required><br>
-
-                     <input type="text" placeholder="Contact Number" id="num" required><br>
-                     <textarea name="message" id="msg" cols="10" rows="10" placeholder="Message" required></textarea>
+                     <label for="name">Name</label>
+                     <input type="text"  id="name" required><br>
+                     <label for="email">Email</label>
+                     <input type="email" id="email" required><br>
+                     <label for="num">Contact Number</label>
+                     <input type="text" id="num" required><br>
+                     <label for="msg">Message</label>
+                     <textarea name="message" id="msg" cols="10" rows="10" required></textarea>
                      <button class="btn" id="sub" type="submit">
                         SUBMIT
                      </button>
@@ -508,16 +509,16 @@
                   <div class="so">1200+ hours of DSA</div>
                </div> -->
                <!-- <h1>Connect with me on social media</h1> -->
-               <div class="sm">
-                  <a href="https://www.linkedin.com/in/prateek-chauhan-669466202/" target="_blank"><img
-                        src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt=""></a>
-                  <a href="https://github.com/PRA3EEK" target="_blank"><img
-                        src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt=""></a>
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=prateekchauhan0004@gmail.com"
-                     target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/888/888853.png" alt=""></a>
-                  <a href="tel:931-580-7215" target="_blank"><img
-                        src="https://cdn-icons-png.flaticon.com/128/552/552489.png" alt=""></a>
-               </div>
+            </div>
+            <div class="sm">
+               <a href="https://www.linkedin.com/in/prateek-chauhan-669466202/" target="_blank"><img
+                     src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt=""></a>
+               <a href="https://github.com/PRA3EEK" target="_blank"><img
+                     src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt=""></a>
+               <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=prateekchauhan0004@gmail.com"
+                  target="_blank"><img src="https://cdn-icons-png.flaticon.com/128/888/888853.png" alt=""></a>
+               <a href="tel:931-580-7215" target="_blank"><img
+                     src="https://cdn-icons-png.flaticon.com/128/552/552489.png" alt=""></a>
             </div>
          </section>
 
@@ -530,7 +531,7 @@
 
       </div>
 
-
+      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
 </body>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
@@ -540,6 +541,16 @@
 
 <script src="index.js">
 
+</script>
+<script>
+   
+
+   var typed = new Typed(".mail", {
+      strings: ["Welcome to my portfolio :-)", "This is a single page portfolio created by me with love using HTML, CSS, and vanilla Java Script.", "In case you have a message for me write it down in contact section.", "Drop a mail @prateekchauhan0004@gmail.com"],
+      typeSpeed: 20,
+      backSpeed: 20,
+      loop: true
+   })
 </script>
 
 

@@ -2,14 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-padding, 5rem);
+  
+}
+
+:root{
+  --font-color: #4caf50;
+  --bg-color: #0a0e1a;
+  --green-shade-two: #4caf50;
+  --green-shade-three: #2e7d32;
+  --body-bg: #FFFF84;
 }
 
 body {
-  background-color: white;
-  color: #353d60;
+  color: var(--font-color);
+  background-color: var(--body-bg);;
 }
 
 
@@ -41,7 +50,7 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: var(--font-color);
   font-size: 1rem;
 }
 
@@ -58,7 +67,7 @@ body {
 }
 
 .about {
-  background: url('/sl_032421_41660_19.jpg');
+  /* background: url('/sl_032421_41660_19.jpg'); */
   background-position: center;
   background-size: 100%;
 
@@ -72,7 +81,7 @@ body {
 .greeting_and_name {
   font-size: 3rem;
   font-weight: bolder;
-  background: -webkit-linear-gradient(#0a0e1a, #353d60);
+  background: -webkit-linear-gradient(var(--green-shade-three), var(--green-shade-two));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -81,7 +90,7 @@ body {
 .sec {
   padding: 2rem;
   backdrop-filter: blur(5px);
-  color: #0a0e1a;
+  color: var(--bg-color);
 }
 
 .copy_img {
@@ -126,7 +135,7 @@ body {
 
   width: 85%;
   margin: auto;
-
+  
 
 }
 
@@ -169,7 +178,8 @@ body {
   box-shadow: rgb(23, 23, 23) 0px 7px 29px 0px;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #1d243d;
+  background-color: var(--bg-color);
+ 
 }
 
 .secondProject>div:nth-child(2),
@@ -177,7 +187,7 @@ body {
   display: grid;
   /* align-items: center; */
   /* grid-row-gap: 0.5rem; */
-  color: #c6cacb;
+  color:var(--font-color);
 
 }
 
@@ -237,7 +247,7 @@ body {
 }
 
 rect.ContributionCalendar-day[data-level='0'] {
-  fill: var(--color-calendar-graph-day-bg);
+  fill: var(--body-bg);
 }
 
 rect.ContributionCalendar-day[data-level='1'] {
@@ -313,10 +323,10 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 #contact {
   padding: 2rem;
-  background: url('/5138237.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  width: 50%;
 }
 
 .cform {
@@ -333,7 +343,7 @@ rect.ContributionCalendar-day[data-level='4'] {
   background: transparent;
   height: 3rem;
   padding: 0 1rem 0 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   outline: none;
   border-bottom: 1px solid;
 }
@@ -370,8 +380,8 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .btn {
-  color: white;
-  background-color: #353d60;
+  color: var(--bg-color);
+  background-color: var(--green-shade-two);
   border: none;
   font-size: 1rem;
   padding: 0.5rem;
@@ -385,6 +395,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .btn:hover {
   background-color: #0a0e1a;
+  color: var(--font-color);
 }
 
 
@@ -416,12 +427,13 @@ rect.ContributionCalendar-day[data-level='4'] {
 }
 
 .btnsDivForGitAndVideo>a:hover {
-  color: white;
+  color: var(--font-color);
   background-color: #0a0e1a;
 }
 
 .deschead {
   font-size: 1.5rem;
+  color: var(--body-bg);
 }
 
 .chead {
@@ -434,7 +446,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .link {
   font-size: 1.2rem;
-  color: #c6cacb;
+  color: var(--font-color);
   text-decoration: none;
 }
 
@@ -500,6 +512,7 @@ rect.ContributionCalendar-day[data-level='4'] {
   grid-template-columns: repeat(5, 17%);
   font-size: 1rem;
   justify-content: space-around;
+  background-color: var(--bg-color);
 }
 
 #cert {
